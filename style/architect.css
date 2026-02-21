@@ -20,8 +20,28 @@
 .text-gray-light {
     color: #727272;
 }
-.text-black{
+
+.text-black {
     color: #131313;
+}
+
+.btn-primary {
+    background-color: #FF900E;
+    width: 180px;
+    height: 64px;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 20px 21px;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main>section{
+    margin-top: 85px;
 }
 
 .navbar {
@@ -54,44 +74,75 @@
     max-width: 1440px;
     margin: 0 auto;
 }
-.banner-container{
+
+.banner-container {
     max-width: 850px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
 }
 
-.banner-title{
+.banner-title {
     font-weight: 700;
     font-size: 4rem;
     /* text-align: center; */
 }
 
-.banner-description{
+.banner-description {
     font-weight: 500;
     font-size: 1rem;
     /* text-align: center; */
-    width: 868px;
+    
 }
-.btn-primary{
-    background-color: #FF900E;
-    width: 180px;
-    height: 64px;
-    border-radius: 5px;
-    border: none;
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 1.25rem;
-    padding: 20px 21px;
-}
-.banner-image{
+
+.banner-image {
     width: 100%;
 }
 
+.teams{
+    align-items: center;
+    gap: 4.5rem;
+}
+
+.team-img-contaner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:1.25rem;
+}
+.our-features{
+    max-width: 530px;
+    gap: 24px;
+}
+.featuers-title{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.features-description{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#quick-list{
+    font-weight: 500;
+}
+
+
 @media screen and (max-width:576px) {
 
-    .navbar, .nav-links{
+    .navbar,
+    .nav-links ,.teams {
         flex-direction: column;
     }
-    
+    .team-img-contaner{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
 }
